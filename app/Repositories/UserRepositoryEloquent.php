@@ -4,16 +4,24 @@ namespace CodeFlix\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use CodeFlix\Repositories\CategoryRepository;
-use CodeFlix\Models\Category;
-use CodeFlix\Validators\CategoryValidator;
+use CodeFlix\Repositories\UserRepository;
+use CodeFlix\Models\User;
+use CodeFlix\Validators\UserValidator;
 
 /**
- * Class CategoryRepositoryEloquent
+ * Class UserRepositoryEloquent
  * @package namespace CodeFlix\Repositories;
  */
-class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepository
+class UserRepositoryEloquent extends BaseRepository implements UserRepository
 {
+
+    public function create(array $attributes)
+    {
+        $attributes['role'] = USER::ROLE_ADMIN;
+        $attributes['password'] = User::generatePassword();
+        return parent::create($attributes);
+    }
+
     /**
      * Specify Model class name
      *
@@ -21,7 +29,7 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
      */
     public function model()
     {
-        return Category::class;
+        return User::class;
     }
 
     

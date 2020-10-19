@@ -4,6 +4,7 @@ namespace CodeFlix\Http\Controllers\Admin;
 
 use CodeFlix\Forms\UserForm;
 use CodeFlix\Models\User;
+use CodeFlix\Repositories\UserRepository;
 use Illuminate\Http\Request;
 use CodeFlix\Http\Controllers\Controller;
 use Kris\LaravelFormBuilder\Form;
@@ -11,13 +12,27 @@ use Kris\LaravelFormBuilder\Form;
 class UsersController extends Controller
 {
     /**
+     * @var UserRepository
+     */
+    private $repository;
+
+    /**
+     * UsersController constructor.
+     */
+    public function __construct(UserRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $users = User::paginate();
+        $users = $this->repository->paginate();
         return view('admin.users.index', compact('users'));
     }
 
@@ -55,9 +70,7 @@ class UsersController extends Controller
         }
 
         $data = $form->getFieldValues();
-        $data['role'] = USER::ROLE_ADMIN;
-        $data['password'] = User::generatePassword();
-        User::create($data);
+        $this->repository->create($data);
         $request->session()->flash('message', 'Usuário criado com Sucesso!');
 
         return redirect()->route('admin.users.index');
@@ -98,11 +111,11 @@ class UsersController extends Controller
      * @param  \CodeFlix\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(Request $request, $id)
     {
         /** @var Form $form */
         $form = \FormBuilder::create(UserForm::class, [
-            'data' => ['id' => $user->id]
+            'data' => ['id' => $id]
         ]);
 
         if(!$form->isValid()){
@@ -113,8 +126,7 @@ class UsersController extends Controller
         }
 
         $data = array_except($form->getFieldValues(), ['password', 'role']);
-        $user->fill($data);
-        $user->save();
+        $this->repository->update($data, $id);
         $request->session()->flash('message', 'Usuário alterado com Sucesso!');
 
         return redirect()->route('admin.users.index');
@@ -128,11 +140,11 @@ class UsersController extends Controller
      * @return \Illuminate\Http\Response
      * @throws \Exception
      */
-    public function destroy(Request $request, User $user)
+    public function destroy(Request $request, $id)
     {
-        $user->delete();
+        $this->repository->delete($id);
 
-        $request->session()->flash('message', 'Usuário deletado com Sucesso!');
+        $request->session()->flash('message', 'Usuário excluído com Sucesso!');
 
         return redirect()->route('admin.users.index');
     }

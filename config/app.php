@@ -178,6 +178,7 @@ return [
         // CodeFlix\Providers\BroadcastServiceProvider::class,
         CodeFlix\Providers\EventServiceProvider::class,
         CodeFlix\Providers\RouteServiceProvider::class,
+        CodeFlix\Providers\RepositoryServiceProvider::class,
 
         /*
         * External Providers

@@ -11,7 +11,8 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "patricktalmadge/bootstrapper": "5.10.3",
-        "pbmedia/laravel-webdav": "1.7.0"
+        "pbmedia/laravel-webdav": "1.7.0",
+        "prettus/l5-repository": "2.6.18"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.4.1",

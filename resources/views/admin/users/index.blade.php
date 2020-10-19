@@ -3,7 +3,20 @@
 @section('content')
     <div class="container">
         <div class="row">
-            {!! Table::withContents($users->items())->striped() !!}
+            <h3>Listagem de Usuários</h3>
+            {!! Button::primary('Novo Usuário')->asLinkTo(route('admin.users.create')) !!}
+        </div>
+        <div class="row">
+
+            {!! Table::withContents($users->items())->striped()
+                ->callback('Ações', function ($field, $user){
+                    $linkEdit = route('admin.users.edit', ['user' => $user->id]);
+                    $linkShow = route('admin.users.show', ['user' => $user->id]);
+
+                    return Button::link(Icon::create('pencil'))->addClass(['text-warning'])->asLinkTo($linkEdit).' '.
+                            Button::link(Icon::create('remove'))->addClass(['text-danger'])->asLinkTo($linkShow);
+                })
+            !!}
         </div>
 
         {!! $users->links() !!}

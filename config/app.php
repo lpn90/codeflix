@@ -183,7 +183,8 @@ return [
         * External Providers
         */
 
-        Pbmedia\FilesystemProviders\WebDAVServiceProvider::class
+        Pbmedia\FilesystemProviders\WebDAVServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class
     ],
 
     /*
@@ -236,6 +237,9 @@ return [
         'Table' => Bootstrapper\Facades\Table::class,
         'Icon' => Bootstrapper\Facades\Icon::class,
         'Alert' => Bootstrapper\Facades\Alert::class,
+        'Button' => Bootstrapper\Facades\Button::class,
+        'Navbar' => Bootstrapper\Facades\Navbar::class,
+        'Navigation' => Bootstrapper\Facades\Navigation::class,
         'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class
 
     ],

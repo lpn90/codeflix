@@ -71,7 +71,7 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
-        //
+        return view('admin.users.show', compact('user'));
     }
 
     /**
@@ -82,7 +82,13 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        $form = \FormBuilder::create(UserForm::class, [
+            'url' => route('admin.users.update', ['user' => $user->id]),
+            'method' => 'PUT',
+            'model' => $user
+        ]);
+
+        return view('admin.users.edit', compact('form'));
     }
 
     /**
@@ -94,17 +100,40 @@ class UsersController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        /** @var Form $form */
+        $form = \FormBuilder::create(UserForm::class, [
+            'data' => ['id' => $user->id]
+        ]);
+
+        if(!$form->isValid()){
+            return redirect()
+                ->back()
+                ->withErrors($form->getErrors())
+                ->withInput();
+        }
+
+        $data = array_except($form->getFieldValues(), ['password', 'role']);
+        $user->fill($data);
+        $user->save();
+        $request->session()->flash('message', 'Usuário alterado com Sucesso!');
+
+        return redirect()->route('admin.users.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \CodeFlix\Models\User  $user
+     * @param Request $request
+     * @param \CodeFlix\Models\User $user
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
-    public function destroy(User $user)
+    public function destroy(Request $request, User $user)
     {
-        //
+        $user->delete();
+
+        $request->session()->flash('message', 'Usuário deletado com Sucesso!');
+
+        return redirect()->route('admin.users.index');
     }
 }

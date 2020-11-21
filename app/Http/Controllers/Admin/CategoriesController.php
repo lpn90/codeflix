@@ -2,24 +2,25 @@
 
 namespace CodeFlix\Http\Controllers\Admin;
 
-use CodeFlix\Forms\UserForm;
-use CodeFlix\Models\User;
-use CodeFlix\Repositories\UserRepository;
-use Illuminate\Http\Request;
+use CodeFlix\Forms\CategoryForm;
 use CodeFlix\Http\Controllers\Controller;
+use CodeFlix\Models\Category;
+use Illuminate\Http\Request;
+use CodeFlix\Repositories\CategoryRepository;
 use Kris\LaravelFormBuilder\Form;
 
-class UsersController extends Controller
+
+class CategoriesController extends Controller
 {
-    /**
-     * @var UserRepository
-     */
-    private $repository;
 
     /**
-     * UsersController constructor.
+     * @var CategoryRepository
      */
-    public function __construct(UserRepository $repository)
+    protected $repository;
+
+
+
+    public function __construct(CategoryRepository $repository)
     {
         $this->repository = $repository;
     }
@@ -32,8 +33,9 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users = $this->repository->paginate();
-        return view('admin.users.index', compact('users'));
+        $categories = $this->repository->paginate();
+
+        return view('admin.categories.index', compact('categories'));
     }
 
     /**
@@ -43,24 +45,26 @@ class UsersController extends Controller
      */
     public function create()
     {
-        $form = \FormBuilder::create(UserForm::class, [
-            'url' => route('admin.users.store'),
+        $form = \FormBuilder::create(CategoryForm::class, [
+            'url' => route('admin.categories.store'),
             'method' => 'POST'
         ]);
 
-        return view('admin.users.create', compact('form'));
+        return view('admin.categories.create', compact('form'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
+     *
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
+
         /** @var Form $form */
-        $form = \FormBuilder::create(UserForm::class);
+        $form = \FormBuilder::create(CategoryForm::class);
 
         if(!$form->isValid()){
             return redirect()
@@ -71,50 +75,55 @@ class UsersController extends Controller
 
         $data = $form->getFieldValues();
         $this->repository->create($data);
-        $request->session()->flash('message', 'Usuário criado com Sucesso!');
+        $request->session()->flash('message', 'Categoria criada com Sucesso!');
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('admin.categories.index');
     }
+
 
     /**
      * Display the specified resource.
      *
-     * @param  \CodeFlix\Models\User  $user
+     * @param Category $category
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function show(User $user)
+    public function show(Category $category)
     {
-        return view('admin.users.show', compact('user'));
+        return view('admin.categories.show', compact('category'));
     }
+
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \CodeFlix\Models\User  $user
+     * @param Category $category
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function edit(User $user)
+    public function edit(Category $category)
     {
-        $form = \FormBuilder::create(UserForm::class, [
-            'url' => route('admin.users.update', ['user' => $user->id]),
+
+        $form = \FormBuilder::create(CategoryForm::class, [
+            'url' => route('admin.categories.update', ['category' => $category->id]),
             'method' => 'PUT',
-            'model' => $user
+            'model' => $category
         ]);
 
-        return view('admin.users.edit', compact('form'));
+        return view('admin.categories.edit', compact('form'));
     }
+
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \CodeFlix\Models\User  $user
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     *
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, $id)
     {
         /** @var Form $form */
-        $form = \FormBuilder::create(UserForm::class, [
+        $form = \FormBuilder::create(CategoryForm::class, [
             'data' => ['id' => $id]
         ]);
 
@@ -125,27 +134,28 @@ class UsersController extends Controller
                 ->withInput();
         }
 
-        $data = array_except($form->getFieldValues(), ['password', 'role']);
+        $data = $form->getFieldValues();
         $this->repository->update($data, $id);
-        $request->session()->flash('message', 'Usuário alterado com Sucesso!');
+        $request->session()->flash('message', 'Categoria alterada com Sucesso!');
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('admin.categories.index');
     }
+
 
     /**
      * Remove the specified resource from storage.
      *
      * @param Request $request
-     * @param \CodeFlix\Models\User $user
-     * @return \Illuminate\Http\Response
-     * @throws \Exception
+     * @param int $id
+     *
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Request $request, $id)
     {
         $this->repository->delete($id);
 
-        $request->session()->flash('message', 'Usuário excluído com Sucesso!');
+        $request->session()->flash('message', 'Categoria excluída com Sucesso!');
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('admin.categories.index');
     }
 }

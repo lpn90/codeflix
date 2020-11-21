@@ -48,6 +48,7 @@ Route::group(
             Route::post('users/change-password', 'Auth\ChangePasswordController@updatePassword')->name('users.update-password');
 
             Route::resource('users', 'UsersController');
+            Route::resource('categories', 'CategoriesController');
 
 
 

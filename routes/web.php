@@ -24,6 +24,7 @@ Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm
     ->name('password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
+//E-mail Verification Routes
 Route::get('email-verification/error', 'EmailVerificationController@getVerificationError')->name('email-verification.error');
 Route::get('email-verification/check/{token}', 'EmailVerificationController@getVerification')->name('email-verification.check');
 
@@ -41,7 +42,14 @@ Route::group(
             Route::name('logout')->post('logout', 'Auth\LoginController@logout');
             Route::get('dashboard', function (){
                 return view('admin.dashboard');
-            });
+            })->name('dashboard');
+
+            Route::get('users/change-password', 'Auth\ChangePasswordController@show')->name('users.change-password');
+            Route::post('users/change-password', 'Auth\ChangePasswordController@updatePassword')->name('users.update-password');
+
             Route::resource('users', 'UsersController');
+
+
+
         });
 });

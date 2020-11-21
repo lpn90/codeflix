@@ -28,6 +28,10 @@
                         Auth::user()->name,
                         [
                             [
+                                'link' => route('admin.users.change-password'),
+                                'title' => 'Trocar Senha'
+                            ],
+                            [
                                 'link' => route('admin.logout'),
                                 'title' => 'Logout',
                                 'linkAttributes' => [

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,17 +161,22 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Auth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\resources\views\admin\auth" />
+      <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin\Auth" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\app\Http\Controllers\Auth" />
+      <recent name="E:\fontes\codeflix\resources\views\auth\passwords" />
       <recent name="E:\fontes\codeflix\resources\views\admin\users" />
       <recent name="E:\fontes\codeflix\resources\views\admin" />
       <recent name="E:\fontes\codeflix\resources\views\layouts" />
-      <recent name="E:\fontes\codeflix\resources\views\admin\auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -192,7 +198,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:WebServerr" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@582675b7" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@68c1c5d4" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -229,7 +235,8 @@
       <workItem from="1603038876216" duration="13275000" />
       <workItem from="1603130037447" duration="4607000" />
       <workItem from="1604714509072" duration="5000" />
-      <workItem from="1605896580618" duration="2632000" />
+      <workItem from="1605896580618" duration="3662000" />
+      <workItem from="1605923011419" duration="6817000" />
     </task>
     <servers />
   </component>
@@ -265,22 +272,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602990160850" />
-    <state width="1293" height="264" key="GridCell.Tab.0.bottom" timestamp="1605897750036">
+    <state width="1293" height="264" key="GridCell.Tab.0.bottom" timestamp="1605928267314">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605897750036" />
-    <state width="1293" height="264" key="GridCell.Tab.0.center" timestamp="1605897750036">
+    <state width="1293" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605928267314" />
+    <state width="1293" height="264" key="GridCell.Tab.0.center" timestamp="1605928267314">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605897750036" />
-    <state width="1293" height="264" key="GridCell.Tab.0.left" timestamp="1605897750035">
+    <state width="1293" height="264" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605928267314" />
+    <state width="1293" height="264" key="GridCell.Tab.0.left" timestamp="1605928267314">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605897750035" />
-    <state width="1293" height="264" key="GridCell.Tab.0.right" timestamp="1605897750036">
+    <state width="1293" height="264" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605928267314" />
+    <state width="1293" height="264" key="GridCell.Tab.0.right" timestamp="1605928267314">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605897750036" />
+    <state width="1293" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605928267314" />
     <state x="794" y="444" key="NewPhpFileDialog" timestamp="1601003520542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -289,10 +296,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603044987315" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1605896671105">
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1605923413667">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605896671105" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605923413667" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603061640695">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

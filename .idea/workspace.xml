@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9f06262-0686-40b7-b242-0b3157ff968c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9f06262-0686-40b7-b242-0b3157ff968c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_21_163122_create_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_21_163122_create_videos_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +239,7 @@
       <workItem from="1605896580618" duration="3662000" />
       <workItem from="1605923011419" duration="14903000" />
       <workItem from="1605960048616" duration="2172000" />
-      <workItem from="1605973197131" duration="3101000" />
+      <workItem from="1605973197131" duration="4832000" />
     </task>
     <servers />
   </component>
@@ -277,22 +275,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602990160850" />
-    <state width="1293" height="264" key="GridCell.Tab.0.bottom" timestamp="1605932842554">
+    <state width="1293" height="264" key="GridCell.Tab.0.bottom" timestamp="1605978181995">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605932842554" />
-    <state width="1293" height="264" key="GridCell.Tab.0.center" timestamp="1605932842554">
+    <state width="1293" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605978181995" />
+    <state width="1293" height="264" key="GridCell.Tab.0.center" timestamp="1605978181995">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605932842554" />
-    <state width="1293" height="264" key="GridCell.Tab.0.left" timestamp="1605932842554">
+    <state width="1293" height="264" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605978181995" />
+    <state width="1293" height="264" key="GridCell.Tab.0.left" timestamp="1605978181994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605932842554" />
-    <state width="1293" height="264" key="GridCell.Tab.0.right" timestamp="1605932842554">
+    <state width="1293" height="264" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605978181994" />
+    <state width="1293" height="264" key="GridCell.Tab.0.right" timestamp="1605978181995">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605932842554" />
+    <state width="1293" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605978181995" />
     <state x="794" y="444" key="NewPhpFileDialog" timestamp="1601003520542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -301,6 +299,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603044987315" />
+    <state x="828" y="315" width="324" height="420" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605978058184">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="828" y="315" width="324" height="420" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605978058184" />
     <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1605973678260">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

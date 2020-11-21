@@ -7,8 +7,9 @@ use CodeFlix\Repositories\UserRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Route;
 
-class ChangePasswordController extends Controller
+class UserSettingsController extends Controller
 {
 
     /**
@@ -23,19 +24,22 @@ class ChangePasswordController extends Controller
      */
     public function __construct(UserRepository $repository)
     {
-       // $this->middleware('guest');
         $this->repository = $repository;
     }
 
     /**
      * Display the specified resource.
      *
+     * @param Request $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function show()
+    public function edit(Request $request)
     {
+        //Verifica a URL de Origem
+        //$origin = $request->session()->previousUrl();
+
         $email = \Auth::user()->email;
-        return view('admin.auth.change-password', compact('email'));
+        return view('admin.auth.settings', compact('email'));
     }
 
 
@@ -43,18 +47,19 @@ class ChangePasswordController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    protected function updatePassword(Request $request)
+    protected function update(Request $request)
     {
 
-        $input = $request->all();
+        $data = array_except($request->all(), ['email']) ;
         $id = \Auth::user()->id;
 
+        /*
         if (! Hash::check($input['password_old'],\Auth::user()->password)){
-            return redirect(route('admin.users.change-password'))->withErrors(['password_old' => 'Senha atual está incorreta'])->withInput();
+            return redirect(route('admin.user_settings.edit'))->withErrors(['password_old' => 'Senha atual está incorreta'])->withInput();
         }
-
+        */
         $validator = Validator::make($request->all(), [
-            'email'      => "required|max:255|email|unique:users,email,$id",
+           // 'email'      => "required|max:255|email|unique:users,email,$id",
             'password'   => ["required"],
             'password_confirmation' => 'required|same:password'
         ]);
@@ -64,10 +69,7 @@ class ChangePasswordController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         }
-
-        $input['password'] = bcrypt($input['password']);
-
-        $this->repository->update($input, $id);
+        $this->repository->update($data, $id);
         $request->session()->flash('message', 'Senha do Usuário alterada com Sucesso!');
 
 

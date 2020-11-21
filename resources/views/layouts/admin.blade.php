@@ -24,12 +24,12 @@
                     ['link' => route('admin.categories.index'), 'title' => 'Categorias'],
                 ];
                 $menus = Navigation::links($arrayLinks);
-                $logout = Navigation::links([
+                $menuRight = Navigation::links([
                     [
                         Auth::user()->name,
                         [
                             [
-                                'link' => route('admin.users.change-password'),
+                                'link' => route('admin.user_settings.edit'),
                                 'title' => 'Trocar Senha'
                             ],
                             [
@@ -42,7 +42,7 @@
                         ]
                     ]
                 ])->right();
-                $navbar->withContent($menus)->withContent($logout);
+                $navbar->withContent($menus)->withContent($menuRight);
             }
         ?>
 

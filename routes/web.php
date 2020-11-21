@@ -44,8 +44,8 @@ Route::group(
                 return view('admin.dashboard');
             })->name('dashboard');
 
-            Route::get('users/change-password', 'Auth\ChangePasswordController@show')->name('users.change-password');
-            Route::post('users/change-password', 'Auth\ChangePasswordController@updatePassword')->name('users.update-password');
+            Route::name('user_settings.edit')->get('users/settings', 'Auth\UserSettingsController@edit');
+            Route::name('user_settings.update')->put('users/settings', 'Auth\UserSettingsController@update');
 
             Route::resource('users', 'UsersController');
             Route::resource('categories', 'CategoriesController');

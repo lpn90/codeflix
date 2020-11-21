@@ -8,8 +8,9 @@
                 <div class="panel-heading">Alterar Senha</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('admin.users.update-password') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('admin.user_settings.update') }}">
                         {{ csrf_field() }}
+                        <input type="hidden" name="_method" value="PUT" />
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail</label>
@@ -25,6 +26,7 @@
                             </div>
                         </div>
 
+                        <!--
                         <div class="form-group{{ $errors->has('password_old') ? ' has-error' : '' }}">
                             <label for="password_old" class="col-md-4 control-label">Senha Atual</label>
 
@@ -38,6 +40,8 @@
                                 @endif
                             </div>
                         </div>
+
+                        -->
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Nova Senha</label>

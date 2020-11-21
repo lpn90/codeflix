@@ -123,9 +123,7 @@ class CategoriesController extends Controller
     public function update(Request $request, $id)
     {
         /** @var Form $form */
-        $form = \FormBuilder::create(CategoryForm::class, [
-            'data' => ['id' => $id]
-        ]);
+        $form = \FormBuilder::create(CategoryForm::class);
 
         if(!$form->isValid()){
             return redirect()

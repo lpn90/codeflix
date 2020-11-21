@@ -49,6 +49,7 @@ Route::group(
 
             Route::resource('users', 'UsersController');
             Route::resource('categories', 'CategoriesController');
+            Route::resource('series', 'SeriesController');
 
 
 

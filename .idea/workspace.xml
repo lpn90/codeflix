@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/ChangePasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/UserSettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmailVerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmailVerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/change-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -158,7 +157,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/categories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
@@ -171,11 +170,11 @@
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin\Auth" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\resources\views\admin" />
       <recent name="E:\fontes\codeflix\resources\views\admin\categories" />
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Auth" />
       <recent name="E:\fontes\codeflix\resources\views\auth\passwords" />
       <recent name="E:\fontes\codeflix\resources\views\admin\users" />
-      <recent name="E:\fontes\codeflix\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -240,7 +239,9 @@
       <workItem from="1603130037447" duration="4607000" />
       <workItem from="1604714509072" duration="5000" />
       <workItem from="1605896580618" duration="3662000" />
-      <workItem from="1605923011419" duration="14316000" />
+      <workItem from="1605923011419" duration="14903000" />
+      <workItem from="1605960048616" duration="2172000" />
+      <workItem from="1605973197131" duration="3101000" />
     </task>
     <servers />
   </component>
@@ -260,18 +261,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605934314468" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605933042622">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605974008827">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605933042622" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605974008827" />
     <state x="740" y="453" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1601002244730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="453" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601002244730" />
-    <state x="761" y="401" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1" timestamp="1600912135997">
+    <state x="761" y="401" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1" timestamp="1605961545700">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="761" y="401" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600912135997" />
+    <state x="761" y="401" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605961545700" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1602990160850">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -300,10 +301,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603044987315" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1605923413667">
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1605973678260">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605923413667" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605973678260" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603061640695">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

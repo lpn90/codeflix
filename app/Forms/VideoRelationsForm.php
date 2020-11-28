@@ -13,16 +13,18 @@ class VideoRelationsForm extends Form
         $this->add('categories', 'entity',[
             'class' => Category::class,
             'property' => 'name',
-            'selected' => $this->model->categories->pluck('id')->toArray(),
+            'selected' => $this->model ? $this->model->categories->pluck('id')->toArray() : null,
             'multiple' => true,
             'attr' => [
                 'name' => 'categories[]'
-            ]
+            ],
+            'label' => 'Categorias'
         ])
             ->add('series_id', 'entity',[
                 'class' => Serie::class,
                 'property' => 'title',
-                'empty_value' => 'Selecione a Série'
+                'empty_value' => 'Selecione a Série',
+                'label' => 'Série'
             ]);
     }
 }

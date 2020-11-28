@@ -14,7 +14,7 @@ class CreateCategoryVideoTable extends Migration
     public function up()
     {
         Schema::create('category_video', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->integer('category_id')->unsigned();
             $table->foreign('category_id')->references('id')->on('categories');
             $table->integer('video_id')->unsigned();

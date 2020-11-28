@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/videos/tabs-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/videos/tabs-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/VideoRelationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/VideoRelationsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,18 +153,18 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/videos" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\resources\views\admin\videos" />
       <recent name="E:\fontes\codeflix\resources\views\admin" />
       <recent name="E:\fontes\codeflix\resources\views\admin\categories" />
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Auth" />
       <recent name="E:\fontes\codeflix\resources\views\auth\passwords" />
-      <recent name="E:\fontes\codeflix\resources\views\admin\users" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\fontes\codeflix\app\Forms" />
@@ -194,6 +193,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:WebServerr" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@5972ff34" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:WebServerr" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5e931078" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -234,7 +238,7 @@
       <workItem from="1605923011419" duration="14903000" />
       <workItem from="1605960048616" duration="2172000" />
       <workItem from="1605973197131" duration="5593000" />
-      <workItem from="1606571950462" duration="9154000" />
+      <workItem from="1606571950462" duration="10594000" />
     </task>
     <servers />
   </component>
@@ -254,10 +258,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605934314468" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606574965109">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606584397784">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606574965109" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606584397784" />
     <state x="740" y="453" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1601002244730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -270,22 +274,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602990160850" />
-    <state width="1293" height="264" key="GridCell.Tab.0.bottom" timestamp="1606573476102">
+    <state width="1293" height="264" key="GridCell.Tab.0.bottom" timestamp="1606585121245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606573476102" />
-    <state width="1293" height="264" key="GridCell.Tab.0.center" timestamp="1606573476102">
+    <state width="1293" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606585121245" />
+    <state width="1293" height="264" key="GridCell.Tab.0.center" timestamp="1606585121245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606573476102" />
-    <state width="1293" height="264" key="GridCell.Tab.0.left" timestamp="1606573476101">
+    <state width="1293" height="264" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606585121245" />
+    <state width="1293" height="264" key="GridCell.Tab.0.left" timestamp="1606585121244">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606573476101" />
-    <state width="1293" height="264" key="GridCell.Tab.0.right" timestamp="1606573476102">
+    <state width="1293" height="264" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606585121244" />
+    <state width="1293" height="264" key="GridCell.Tab.0.right" timestamp="1606585121245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1293" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606573476102" />
+    <state width="1293" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606585121245" />
     <state x="794" y="444" key="NewPhpFileDialog" timestamp="1601003520542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -306,9 +310,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="646" y="99" width="627" height="852" key="find.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606583319809" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606583363960">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606584375351">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606583363960" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606584375351" />
   </component>
 </project>

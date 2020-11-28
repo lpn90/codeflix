@@ -2,11 +2,10 @@
 
 namespace CodeFlix\Repositories;
 
+use CodeFlix\Media\ThumbUploads;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use CodeFlix\Repositories\SerieRepository;
 use CodeFlix\Models\Serie;
-use CodeFlix\Validators\SerieValidator;
 
 /**
  * Class SerieRepositoryEloquent
@@ -14,6 +13,7 @@ use CodeFlix\Validators\SerieValidator;
  */
 class SerieRepositoryEloquent extends BaseRepository implements SerieRepository
 {
+    use ThumbUploads;
     /**
      * Specify Model class name
      *

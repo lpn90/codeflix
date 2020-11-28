@@ -3,7 +3,7 @@
 $tabs = [
     [
         'title' => 'Informações',
-        'link'  => ''
+        'link'  => !isset($video)?route('admin.videos.create') : route('admin.videos.edit', ['video' => $video->id])
     ],
     [
         'title' => 'Série e Categorias',

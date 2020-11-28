@@ -136,7 +136,7 @@ class CategoriesController extends Controller
         $this->repository->update($data, $id);
         $request->session()->flash('message', 'Categoria alterada com Sucesso!');
 
-        return redirect()->route('admin.categories.index');
+        return redirect()->back('admin.categories.index');
     }
 
 

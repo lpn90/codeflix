@@ -30,4 +30,8 @@ class Category extends Model implements TableInterface
                 return $this->name;
         }
     }
+
+    public function videos(){
+        return $this->belongsToMany(Video::class);
+    }
 }

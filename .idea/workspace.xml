@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeflix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeflix.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/SerieRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/SerieRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/SerieRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/SerieRepositoryEloquent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Media/ThumbUploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/ThumbUploads.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Media/VideoStorages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/VideoStorages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Serie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/SeriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SeriesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/videos_test/.getkeep" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +151,16 @@
       <path value="$PROJECT_DIR$/vendor/prettus/laravel-validation" />
       <path value="$PROJECT_DIR$/vendor/prettus/l5-repository" />
       <path value="$PROJECT_DIR$/vendor/jrean/laravel-user-verification" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/folklore/image" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="ProjectId" id="1cc5WLQ9MpdzJkYhstw3kBDfTlO" />
@@ -246,7 +265,8 @@
       <workItem from="1605923011419" duration="14903000" />
       <workItem from="1605960048616" duration="2172000" />
       <workItem from="1605973197131" duration="5593000" />
-      <workItem from="1606571950462" duration="20425000" />
+      <workItem from="1606571950462" duration="26469000" />
+      <workItem from="1606686883875" duration="3191000" />
     </task>
     <servers />
   </component>
@@ -314,14 +334,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1603044987315" />
+    <state width="520" height="446" key="SwitcherDM" timestamp="1606686912254">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="520" height="446" key="SwitcherDM/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606686912254" />
     <state x="828" y="315" width="324" height="420" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605978058184">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="828" y="315" width="324" height="420" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605978058184" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1606571963656">
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1606686955444">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606571963656" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606686955444" />
     <state x="646" y="99" width="627" height="852" key="find.popup" timestamp="1606583319809">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

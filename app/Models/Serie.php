@@ -12,6 +12,7 @@ class Serie extends Model implements TableInterface
 
     use SeriePaths;
 
+
     protected $fillable = ['title','description'];
 
     /**

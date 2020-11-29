@@ -23,6 +23,6 @@ trait VideoStorages
 
     protected function getAbsolutePath(FilesystemAdapter $storage, $fileRelativePath)
     {
-        return $storage->getDriver()->getAdpter()->applyPathPrefix($fileRelativePath);
+        return $storage->getDriver()->getAdapter()->applyPathPrefix($fileRelativePath);
     }
 }

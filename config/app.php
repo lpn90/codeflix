@@ -186,7 +186,8 @@ return [
         */
 
         Pbmedia\FilesystemProviders\WebDAVServiceProvider::class,
-        Prettus\Repository\Providers\RepositoryServiceProvider::class
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        Folklore\Image\ImageServiceProvider::class
     ],
 
     /*
@@ -246,7 +247,7 @@ return [
         'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
 
         'UserVerification' => Jrean\UserVerification\Facades\UserVerification::class,
-
+        'Image' => Folklore\Image\Facades\Image::class
     ],
 
 ];

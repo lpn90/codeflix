@@ -13,14 +13,14 @@ class Serie extends Model implements TableInterface
     use SeriePaths;
 
 
-    protected $fillable = ['title','description'];
+    protected $fillable = ['title', 'description', 'thumb'];
 
     /**
      * @inheritDoc
      */
     public function getTableHeaders()
     {
-        return ['#', 'Titulo', 'Descrição'];
+        return ['#', 'Descrição'];
     }
 
     /**
@@ -31,10 +31,6 @@ class Serie extends Model implements TableInterface
         switch ($header){
             case '#':
                 return $this->id;
-            case 'Titulo':
-                return $this->title;
-            case 'Descrição':
-                return $this->description;
         }
     }
 }

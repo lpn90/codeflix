@@ -9,6 +9,10 @@ class SerieForm extends Form
     public function buildForm()
     {
         $id = $this->getData('id');
+
+        $rulesThumbFile = 'image|max:10240';
+        $rulesThumbFile = !$id ? "required|$rulesThumbFile" : $rulesThumbFile;
+
         $this
             ->add('title', 'text', [
                 'label' => 'Título',
@@ -17,6 +21,11 @@ class SerieForm extends Form
             ->add('description', 'textarea',[
                 'label' => 'Descrição',
                 'rules' => "required|min:3" //unique:tabel,campo_a_ser_consultado
+            ])
+            ->add('thumb_file', 'file',[
+                'required' => !$id ? true : false,
+                'label' => 'Thumbnail',
+                'rules' => $rulesThumbFile
             ]);
     }
 }

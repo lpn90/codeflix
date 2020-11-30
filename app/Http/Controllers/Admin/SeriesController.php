@@ -71,7 +71,7 @@ class SeriesController extends Controller
         }
 
         $data = $form->getFieldValues();
-        $data['thumb'] = 'thumb.jpg';
+        $data['thumb'] = env('SERIE_NO_THUMB');
         Model::unguard();
         $this->repository->create($data);
         $request->session()->flash('message', 'Série criada com Sucesso!');
@@ -101,7 +101,8 @@ class SeriesController extends Controller
         $form = \FormBuilder::create(SerieForm::class, [
             'url' => route('admin.series.update', ['serie' => $series->id]),
             'method' => 'PUT',
-            'model' => $series
+            'model' => $series,
+            'data' => ['id' => $series->id]
         ]);
 
         return view('admin.series.edit', compact('form'));
@@ -114,10 +115,12 @@ class SeriesController extends Controller
      * @param  \CodeFlix\Models\Serie  $series
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Serie $series)
+    public function update(Request $request, $id)
     {
         /** @var Form $form */
-        $form = \FormBuilder::create(SerieForm::class);
+        $form = \FormBuilder::create(SerieForm::class, [
+            'data' => ['id' => $id]
+        ]);
 
         if(!$form->isValid()){
             return redirect()
@@ -126,8 +129,8 @@ class SeriesController extends Controller
                 ->withInput();
         }
 
-        $data = $form->getFieldValues();
-        $this->repository->update($data, $series->id);
+        $data = array_except($form->getFieldValues(), 'thumb');
+        $this->repository->update($data, $id);
         $request->session()->flash('message', 'Serie alterada com Sucesso!');
 
         return redirect()->route('admin.series.index');
@@ -145,5 +148,15 @@ class SeriesController extends Controller
         $request->session()->flash('message', 'Serie excluída com Sucesso!');
 
         return redirect()->route('admin.series.index');
+    }
+
+    public function thumbAsset(Serie $serie)
+    {
+        return response()->download($serie->thumb_path);
+    }
+
+    public function thumbSmallAsset(Serie $serie)
+    {
+        return response()->download($serie->thumb_small_path);
     }
 }

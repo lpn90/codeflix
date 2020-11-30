@@ -15,6 +15,7 @@ trait ThumbUploads
         $model = $this->find($id);
         $name = $this->upload($model, $file);
         if($name){
+            $this->deleteThumbsOld($model);
             $model->thumb = $name;
             $this->makeThumbSmall($model);
             $model->save();
@@ -45,5 +46,14 @@ trait ThumbUploads
         $result = $storage->putFileAs($model->thumb_folder_storage, $file, $name);
 
         return $result ? $name : $result;
+    }
+
+    public function deleteThumbsOld($model)
+    {
+        /** @var FilesystemAdapter $storage */
+        $storage = $model->getStorage();
+        if (($storage->exists($model->thumb_relative)) && ($model->thumb != env('SERIE_NO_THUMB'))){
+            $storage->delete([$model->thumb_relative, $model->thumb_small_relative]);
+        }
     }
 }

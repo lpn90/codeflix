@@ -4,14 +4,13 @@
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Forms/SerieForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Forms/SerieForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SeriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SeriesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Media/SeriePaths.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/SeriePaths.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Media/ThumbUploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/ThumbUploads.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Serie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/SerieRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/SerieRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/series/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/series/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/VideoRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/VideoRepositoryEloquent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/SeriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SeriesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/VideosTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/VideosTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,24 +170,24 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/videos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Media" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\fontes\codeflix\resources\views\admin\videos" />
-      <recent name="E:\fontes\codeflix\resources\views\admin" />
-      <recent name="E:\fontes\codeflix\resources\views\admin\categories" />
-      <recent name="E:\fontes\codeflix\app\Http\Controllers\Auth" />
-      <recent name="E:\fontes\codeflix\resources\views\auth\passwords" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\fontes\codeflix\app\Forms" />
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin" />
       <recent name="E:\fontes\codeflix\resources\views\admin\auth" />
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin\Auth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\app\Media" />
+      <recent name="E:\fontes\codeflix\resources\views\admin\videos" />
+      <recent name="E:\fontes\codeflix\resources\views\admin" />
+      <recent name="E:\fontes\codeflix\resources\views\admin\categories" />
+      <recent name="E:\fontes\codeflix\app\Http\Controllers\Auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -262,7 +261,7 @@
       <workItem from="1605960048616" duration="2172000" />
       <workItem from="1605973197131" duration="5593000" />
       <workItem from="1606571950462" duration="26469000" />
-      <workItem from="1606686883875" duration="7413000" />
+      <workItem from="1606686883875" duration="8687000" />
     </task>
     <servers />
   </component>
@@ -318,10 +317,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1293" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606586196172" />
-    <state x="788" y="323" key="NewPhpClassDialog" timestamp="1606593740486">
+    <state x="788" y="323" key="NewPhpClassDialog" timestamp="1606695718285">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="788" y="323" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606593740486" />
+    <state x="788" y="323" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606695718285" />
     <state x="794" y="444" key="NewPhpFileDialog" timestamp="1606593714515">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

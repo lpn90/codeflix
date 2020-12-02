@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Media/SeriePaths.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/SeriePaths.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Media/ThumbUploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/ThumbUploads.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Media/ThumbPaths.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/ThumbPaths.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/VideoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/VideoRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/VideoRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/VideoRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/SeriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SeriesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/VideosTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/VideosTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/videos/tabs-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/videos/tabs-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,24 +168,24 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Media" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/videos" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\resources\views\admin\videos" />
+      <recent name="E:\fontes\codeflix\app\Media" />
+      <recent name="E:\fontes\codeflix\resources\views\admin" />
+      <recent name="E:\fontes\codeflix\resources\views\admin\categories" />
+      <recent name="E:\fontes\codeflix\app\Http\Controllers\Auth" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\fontes\codeflix\app\Forms" />
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin" />
       <recent name="E:\fontes\codeflix\resources\views\admin\auth" />
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin\Auth" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\fontes\codeflix\app\Media" />
-      <recent name="E:\fontes\codeflix\resources\views\admin\videos" />
-      <recent name="E:\fontes\codeflix\resources\views\admin" />
-      <recent name="E:\fontes\codeflix\resources\views\admin\categories" />
-      <recent name="E:\fontes\codeflix\app\Http\Controllers\Auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -261,7 +259,8 @@
       <workItem from="1605960048616" duration="2172000" />
       <workItem from="1605973197131" duration="5593000" />
       <workItem from="1606571950462" duration="26469000" />
-      <workItem from="1606686883875" duration="8687000" />
+      <workItem from="1606686883875" duration="9209000" />
+      <workItem from="1606939987238" duration="3707000" />
     </task>
     <servers />
   </component>
@@ -277,18 +276,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="722" y="315" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606589638638" />
-    <state x="764" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1606693745636">
+    <state x="764" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1606944387011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="764" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606693745636" />
+    <state x="764" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606944387011" />
     <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605934314468">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605934314468" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606594784429">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606944328245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606594784429" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606944328245" />
     <state x="740" y="453" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1601002244730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -337,17 +336,17 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="828" y="315" width="324" height="420" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605978058184" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1606686955444">
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1606940773829">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606686955444" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606940773829" />
     <state x="646" y="99" width="627" height="852" key="find.popup" timestamp="1606583319809">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="646" y="99" width="627" height="852" key="find.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606583319809" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606692748589">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606943336420">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606692748589" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606943336420" />
   </component>
 </project>

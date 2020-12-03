@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <h3>Listagem de Categorias</h3>
+            <h3>Listagem de Séries</h3>
             {!! Button::primary('Nova Série')->asLinkTo(route('admin.series.create')) !!}
         </div>
         <div class="row">

@@ -30,6 +30,6 @@ trait VideoStorages
     public function isLocalDriver()
     {
         $driver = config("filesystems.disks.{$this->getDiskDriver()}.driver");
-        return $driver == 'local';
+        return ($driver == 'local');
     }
 }

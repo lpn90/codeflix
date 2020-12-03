@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <h3>Categoria</h3>
+            <h3>Video</h3>
             <?php $iconEdit = Icon::create('pencil');?>
             {!! Button::primary($iconEdit)->asLinkTo(route('admin.videos.edit', ['video' => $video->id])) !!}
             <?php $iconDestroy = Icon::create('remove');?>

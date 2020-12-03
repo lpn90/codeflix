@@ -11,6 +11,13 @@ use Kris\LaravelFormBuilder\Form;
 
 class VideosController extends Controller
 {
+    /*
+     * $videos = Video::onlyTrashed()->paginate(); //Consulta apenas os registros deletados, na lixeira
+     * $videos = Video::withTrashed()->paginate(); //Consulta com os registros deletados, na lixeira
+     * Restaurar um registro DELETADO
+     * $video = Video::withTrashed()->find(1);
+     * $video->restore();
+     */
     /**
      * @var VideoRepository
      */
@@ -142,8 +149,23 @@ class VideosController extends Controller
     {
         $this->repository->delete($id);
 
-        $request->session()->flash('message', 'Categoria excluída com Sucesso!');
+        $request->session()->flash('message', 'Video excluída com Sucesso!');
 
-        return redirect()->back('admin.videos.index');
+        return redirect()->route('admin.videos.index');
+    }
+
+    public function thumbAsset(Video $video)
+    {
+        return response()->download($video->thumb_path);
+    }
+
+    public function thumbSmallAsset(Video $video)
+    {
+        return response()->download($video->thumb_small_path);
+    }
+
+    public function fileAsset(Video $video)
+    {
+        return response()->download($video->file_path);
     }
 }

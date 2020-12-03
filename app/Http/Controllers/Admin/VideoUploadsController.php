@@ -59,8 +59,13 @@ class VideoUploadsController extends Controller
                 ->withInput();
         }
 
-        $this->repository->uploadThumb($id, $request->file('thumb')); //l5-repository
-        $request->session()->flash('message', 'Uploads realizados com Sucesso!');
+        if($request->file('thumb')){
+            $this->repository->uploadThumb($id, $request->file('thumb')); //l5-repository
+        }
+        if($request->file('file')){
+            $this->repository->uploadFile($id, $request->file('file')); //l5-repository
+        }
+        $request->session()->flash('message', 'Upload(s) realizado(s) com Sucesso!');
 
         return redirect()->route('admin.videos.uploads.create', ['video' => $id]);
     }

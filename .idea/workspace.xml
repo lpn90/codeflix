@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Media/Uploads.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Media/ThumbPaths.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/ThumbPaths.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/VideoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/VideoRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/VideoUploadsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/VideoUploadsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Media/ThumbUploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/ThumbUploads.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Media/VideoPaths.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media/VideoPaths.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/VideoRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/VideoRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/videos/tabs-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/videos/tabs-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +259,7 @@
       <workItem from="1605973197131" duration="5593000" />
       <workItem from="1606571950462" duration="26469000" />
       <workItem from="1606686883875" duration="9209000" />
-      <workItem from="1606939987238" duration="3707000" />
+      <workItem from="1606939987238" duration="5908000" />
     </task>
     <servers />
   </component>
@@ -284,10 +283,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605934314468" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606944328245">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606953375356">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606944328245" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606953375356" />
     <state x="740" y="453" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1601002244730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -316,10 +315,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1293" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606586196172" />
-    <state x="788" y="323" key="NewPhpClassDialog" timestamp="1606695718285">
+    <state x="788" y="323" key="NewPhpClassDialog" timestamp="1606953358574">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="788" y="323" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606695718285" />
+    <state x="788" y="323" key="NewPhpClassDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606953358574" />
     <state x="794" y="444" key="NewPhpFileDialog" timestamp="1606593714515">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

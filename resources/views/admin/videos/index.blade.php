@@ -15,7 +15,7 @@
                             'image'     => $video->thumb_small_asset,
                             'link'      => $video->file_asset,
                             'heading'   => $video->title,
-                            'body'      => $video->description
+                            'body'      => "<B>Duração:</B> {$video->duration} minutos.".'<BR>'.$video->description
 ]
                     );
                 })
@@ -37,7 +37,7 @@
 @push('styles')
     <style type="text/css">
         .media-body {
-            width: auto;
+            width: 400px;
         }
     </style>
 @endpush

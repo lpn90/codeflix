@@ -18,6 +18,10 @@ class VideoUploadForm extends Form
                 'label' => 'Arquivo de Vídeo',
                 'rules' => 'mimetypes:video/mp4'  //unique:tabel,campo_a_ser_consultado
             ])
+            ->add('duration', 'text', [
+                'label' => 'Duração',
+                'rules' => 'required|integer|min:1'
+            ])
             ;
     }
 }

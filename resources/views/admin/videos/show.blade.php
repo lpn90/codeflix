@@ -18,9 +18,22 @@
                 'style' => 'display:none'
             ])?>
             {!! form($formDelete) !!}
+            <?php $iconDownload = Icon::create('download');?>
             <br/><br/>
             <table class="table table-bordered">
                     <tbody>
+                    <tr>
+                        <th scope="row">Thumbnail</th>
+                        <td>
+                            <img src="{{$video->thumb_asset}}" width="512" height="360">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Vídeo</th>
+                        <td>
+                            <a href="{{$video->file_asset}}" target="_blank"> {!! Button::primary($iconDownload) !!}</a>
+                        </td>
+                    </tr>
                     <tr>
                         <th scope="row">#</th>
                         <td>{{$video->id}}</td>

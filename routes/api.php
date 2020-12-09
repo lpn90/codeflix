@@ -16,3 +16,14 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+ApiRoute::version('v1', function (){
+    ApiRoute::get('/test', function (){
+        return ['message' => 'A API esta operacional sem autenticação'];
+    });
+
+    ApiRoute::group(['namespace' => 'CodeFlix\Http\Controllers\API', 'as' => 'api'], function (){
+        ApiRoute::post('/access_token', 'AuthController@accessToken')->name('.access_token');
+    });
+
+});

@@ -136,6 +136,8 @@ return [
     */
 
     'providers' => [
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...
@@ -188,8 +190,6 @@ return [
         Pbmedia\FilesystemProviders\WebDAVServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Folklore\Image\ImageServiceProvider::class,
-        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-        Dingo\Api\Provider\LaravelServiceProvider::class
     ],
 
     /*
@@ -250,7 +250,7 @@ return [
 
         'UserVerification' => Jrean\UserVerification\Facades\UserVerification::class,
         'Image' => Folklore\Image\Facades\Image::class,
-        'ApiRoute' => \Dingo\Api\Facade\Route::class,
+        'ApiRoute' => Dingo\Api\Facade\Route::class,
     ],
 
 ];

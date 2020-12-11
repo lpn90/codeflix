@@ -2,7 +2,6 @@
 
 namespace CodeFlix\Providers;
 
-use Bootstrapper\Facades\Form;
 use CodeFlix\Models\Video;
 use Dingo\Api\Exception\Handler;
 use Illuminate\Auth\AuthenticationException;
@@ -37,25 +36,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if ($this->app->environment() !== 'prod') {
+        if ($this->app->environment() !== 'production') {
             $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
         }
 
-        $this->app->bind(
-            'bootstrapper::form',
-            function ($app){
-                $form = new Form(
-                    $app->make('collective::html'),
-                    $app->make('url'),
-                    $app->make('view'),
-                    $app['session.store']->token()
-                );
-            },
-            true
-        );
-
         $handler = app(Handler::class);
-        $handler->register(function (AuthenticationException $exception){
+        $handler->register(function(AuthenticationException $exception){
             return response()->json(['error' => 'Unauthenticated'], 401);
         });
     }

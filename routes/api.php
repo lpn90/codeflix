@@ -27,6 +27,7 @@ ApiRoute::version('v1', function (){
     });
 
     ApiRoute::group(['middleware' => ['api.throttle', 'api.auth'], 'limit' => 60, 'expires' => 1], function (){
+        ApiRoute::post('/logout','AuthController@logout')->name('.logout');
         ApiRoute::get('/test2', function (){
             return ['message' => 'A API esta operacional com autenticação'];
         });

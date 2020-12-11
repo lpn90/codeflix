@@ -26,7 +26,9 @@ ApiRoute::version('v1', function (){
         ApiRoute::post('/access_token', 'AuthController@accessToken')->name('.access_token');
     });
 
-    ApiRoute::group(['middleware' => 'api.throttle', 'limit' => 60, 'expires' => 1], function (){
-        //endpoints que precisam de autenticação
+    ApiRoute::group(['middleware' => ['api.throttle', 'api.auth'], 'limit' => 60, 'expires' => 1], function (){
+        ApiRoute::get('/test2', function (){
+            return ['message' => 'A API esta operacional com autenticação'];
+        });
     });
 });

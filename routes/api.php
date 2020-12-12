@@ -23,7 +23,18 @@ ApiRoute::version('v1', function (){
     });
 
     ApiRoute::group(['namespace' => 'CodeFlix\Http\Controllers\API', 'as' => 'api'], function (){
-        ApiRoute::post('/access_token', 'AuthController@accessToken')->name('.access_token');
+        ApiRoute::post('/access_token', [
+            'uses' => 'AuthController@accessToken',
+            'middleware' => 'api.throttle',
+            'limit' => 10,
+            'expires' => 1
+        ])->name('.access_token');
+        ApiRoute::post('/refresh_token', [
+            'uses' => 'AuthController@refreshToken',
+            'middleware' => 'api.throttle',
+            'limit' => 10,
+            'expires' => 1
+        ])->name('.refresh_token');
     });
 
     ApiRoute::group(['middleware' => ['api.throttle', 'api.auth'], 'limit' => 60, 'expires' => 1], function (){

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2016_09_13_070520_add_verification_to_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2016_09_13_070520_add_verification_to_user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_29_005425_add_role_to_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_29_005425_add_role_to_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/UserControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +257,7 @@
       <workItem from="1607646647180" duration="6939000" />
       <workItem from="1607726881428" duration="632000" />
       <workItem from="1607735860455" duration="4965000" />
-      <workItem from="1607800139716" duration="1199000" />
+      <workItem from="1607800139716" duration="2938000" />
     </task>
     <servers />
   </component>
@@ -275,10 +277,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="764" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1607737242935" />
-    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605934314468">
+    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607802748997">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605934314468" />
+    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1607802748997" />
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606961014218">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

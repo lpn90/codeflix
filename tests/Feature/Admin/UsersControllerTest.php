@@ -1,13 +1,11 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\Admin;
 
 use CodeFlix\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class UsersControllerTest extends TestCase
 {

@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2016_09_13_070520_add_verification_to_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2016_09_13_070520_add_verification_to_user_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_29_005425_add_role_to_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_29_005425_add_role_to_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/UserControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/UsersControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Admin/UsersControllerTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,18 +179,19 @@
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\tests\Feature\Admin" />
+      <recent name="E:\fontes\codeflix\app\Forms" />
+      <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin" />
+      <recent name="E:\fontes\codeflix\resources\views\admin\auth" />
+      <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin\Auth" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\fontes\codeflix\resources\views\admin\videos" />
       <recent name="E:\fontes\codeflix\app\Media" />
       <recent name="E:\fontes\codeflix\resources\views\admin" />
       <recent name="E:\fontes\codeflix\resources\views\admin\categories" />
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Auth" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\fontes\codeflix\app\Forms" />
-      <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin" />
-      <recent name="E:\fontes\codeflix\resources\views\admin\auth" />
-      <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin\Auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -257,7 +255,7 @@
       <workItem from="1607646647180" duration="6939000" />
       <workItem from="1607726881428" duration="632000" />
       <workItem from="1607735860455" duration="4965000" />
-      <workItem from="1607800139716" duration="2938000" />
+      <workItem from="1607800139716" duration="4896000" />
     </task>
     <servers />
   </component>
@@ -281,10 +279,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1607802748997" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606961014218">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607804698658">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1606961014218" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1607804698658" />
     <state x="740" y="453" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1601002244730">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -333,10 +331,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="828" y="315" width="324" height="420" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1605978058184" />
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1607800141916">
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1607916240897">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1607800141916" />
+    <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1607916240897" />
     <state x="646" y="99" width="627" height="852" key="find.popup" timestamp="1606583319809">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

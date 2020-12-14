@@ -22,7 +22,10 @@ ApiRoute::version('v1', function (){
         return ['message' => 'A API esta operacional sem autenticação'];
     });
 
-    ApiRoute::group(['namespace' => 'CodeFlix\Http\Controllers\API', 'as' => 'api'], function (){
+    ApiRoute::group([
+        'namespace' => 'CodeFlix\Http\Controllers\API',
+        'as' => 'api'
+    ], function (){
         ApiRoute::post('/access_token', [
             'uses' => 'AuthController@accessToken',
             'middleware' => 'api.throttle',
@@ -35,12 +38,13 @@ ApiRoute::version('v1', function (){
             'limit' => 10,
             'expires' => 1
         ])->name('.refresh_token');
-    });
 
-    ApiRoute::group(['middleware' => ['api.throttle', 'api.auth'], 'limit' => 60, 'expires' => 1], function (){
-        ApiRoute::post('/logout','AuthController@logout')->name('.logout');
-        ApiRoute::get('/test2', function (){
-            return ['message' => 'A API esta operacional com autenticação'];
+        ApiRoute::group(['middleware' => ['api.throttle', 'api.auth'], 'limit' => 60, 'expires' => 1], function (){
+            ApiRoute::post('/logout','AuthController@logout')->name('.logout');
+            ApiRoute::get('/test2', function (){
+                return ['message' => 'A API esta operacional com autenticação'];
+            });
         });
     });
+
 });

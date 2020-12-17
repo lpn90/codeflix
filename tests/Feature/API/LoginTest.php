@@ -56,6 +56,22 @@ class LoginTest extends TestCase
         ])->assertStatus(500);
     }
 
+    public function testLogoutApi()
+    {
+        $testResponse = $this->makeJWTToken();
+        $token = $testResponse->json()['token'];
+
+        $this->post('api/logout',[
+            'Authorization' => "Bearer $token"
+        ])->assertStatus(204);
+        
+        sleep(60);
+
+        $this->get('api/user', [
+            'Authorization' => "Bearer $token"
+        ])->assertStatus(500);
+    }
+
     protected function clearAuth()
     {
         $reflectionClass = new \ReflectionClass(JWTGuard::class);

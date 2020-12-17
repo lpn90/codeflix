@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e486610-06b2-4edf-b188-367f31a0de76" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Browser/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/Auth/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Browser/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/CategoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/API/LoginTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/API/LoginTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,25 +187,25 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature/API" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\tests\Feature\API" />
+      <recent name="E:\fontes\codeflix\app\Http\Controllers\API" />
       <recent name="E:\fontes\codeflix" />
       <recent name="E:\fontes\codeflix\resources\views\admin\videos" />
       <recent name="E:\fontes\codeflix\app\Media" />
-      <recent name="E:\fontes\codeflix\resources\views\admin" />
-      <recent name="E:\fontes\codeflix\resources\views\admin\categories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\fontes\codeflix\app\Http\Controllers\API\Auth" />
       <recent name="E:\fontes\codeflix\database\" />
       <recent name="E:\fontes\codeflix\tests\Feature\Admin" />
       <recent name="E:\fontes\codeflix\app\Forms" />
       <recent name="E:\fontes\codeflix\app\Http\Controllers\Admin" />
-      <recent name="E:\fontes\codeflix\resources\views\admin\auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -266,7 +272,7 @@
       <workItem from="1607800139716" duration="4896000" />
       <workItem from="1607916239334" duration="2548000" />
       <workItem from="1607983222456" duration="1194000" />
-      <workItem from="1608163059517" duration="5848000" />
+      <workItem from="1608163059517" duration="12003000" />
     </task>
     <servers />
   </component>

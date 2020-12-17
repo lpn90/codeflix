@@ -9,6 +9,9 @@
 
 ## Projeto Laravel - CodeFlix
 É necessário instalar no linux a extensão <b>php-gmagick</b> e habilitar as extensões no php.ini <b>fileinfo</b>, <b>gd2</b> e <b>exif</b>.
+
+###Testes
+É necessário estar executando o [ChromeDriver](https://chromedriver.chromium.org/)
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeFlix\Http\Controllers\API;
+namespace CodeFlix\Http\Controllers\API\Auth;
 
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
